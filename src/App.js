@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Guess from './components/guess'
+import Hangman from './components/hangman.js'
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         </header>
         <p className="App-intro">
           <Guess content="Make a guess" />
+          <Hangman />
         </p>
       </div>
     );
