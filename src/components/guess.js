@@ -1,17 +1,24 @@
 import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-import MAKE_GUESS from '../actions/makeguess'
+import makeguess from '../actions/makeguess'
+import { connect } from 'react-redux'
 
 class Guess extends PureComponent {
-  static PropTypes = {
-    content: PropTypes.string.isRequired,
+
+  onChange(event){
+    this.props.makeguess(event.target.value)
+    event.target.value = ""
   }
 
   render() {
     return(
-      <h1>{ this.props.content }</h1>
+      <div>
+        <form>
+        <label>Start guessing!</label>
+          <input onChange = {this.onChange.bind(this)}/>
+        </form>
+      </div>
     )
   }
 }
 
-export default Guess
+export default connect(null, {makeguess})(Guess)
