@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
+import MAKE_GUESS from '../actions/makeguess'
 
 class Guess extends PureComponent {
   static PropTypes = {
