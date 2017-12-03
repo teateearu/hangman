@@ -1,11 +1,11 @@
 import React, { PureComponent } from 'react'
-import Guesses from './guesses.js'
+import GuessCount from './GuessCount'
 
 class Hangman extends PureComponent {
   render() {
     return(
       <div>
-      <Guesses />
+      <GuessCount />
       </div>
     )
   }

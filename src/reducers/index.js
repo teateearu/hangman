@@ -1,5 +1,5 @@
-// // import currentGame from './currentGame'
-//
-// export default {
-//     currentGame
-// }
+import currentgame from './currentgame'
+
+export default {
+    currentgame
+}

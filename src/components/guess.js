@@ -13,7 +13,7 @@ class Guess extends PureComponent {
     return(
       <div>
         <form>
-        <label>Start guessing!</label>
+        <label>Start guessing! </label>
           <input onChange = {this.onChange.bind(this)}/>
         </form>
       </div>

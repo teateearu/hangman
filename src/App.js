@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Guess from './components/guess'
-import Hangman from './components/hangman.js'
+import Guess from './components/Guess'
+import Hangman from './components/Hangman.js'
+import Pineapple from './images/pine.png'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Hangman</h1>
+          <img className="App-logo" src = {Pineapple} alt="pineapple" height="100" width="80"/>
+          <h1 className="App-title"> HANGMAN </h1>
         </header>
-        <p className="App-intro">
-          <Guess content="Make a guess" />
           <Hangman />
-        </p>
+        <br /><br /><br /><br />
       </div>
     );
   }
