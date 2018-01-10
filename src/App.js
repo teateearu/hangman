@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Guess from './components/Guess'
-import Hangman from './components/Hangman.js'
+import Guess from './components/guess'
+import Hangman from './components/hangman.js'
 import Pineapple from './images/pine.png'
 
 class App extends Component {

@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import Guess from '../components/Guess'
+import Guess from '../components/guess'
 import { connect } from 'react-redux'
 import One from '../images/1.png'
 import Two from '../images/2.png'
