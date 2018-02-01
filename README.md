@@ -1,4 +1,4 @@
-# README
+# HANGMAN
 
 A simple hangman game built with React.js
 
